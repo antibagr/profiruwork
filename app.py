@@ -25,10 +25,10 @@ class App():
     self.score = 0
 
     # c - counter
-    self.c = Label(self.root, text=f"Бой {self.counter} из 5")
+    self.c = Label(self.root, text=r"Бой {self.counter} из 5")
     self.c.grid(column=0,row=0)
     # t - task
-    self.t = Label(self.root, text=f"{self.a} * {self.b} = ")
+    self.t = Label(self.root, text=r"{self.a} * {self.b} = ")
     self.t.grid(column=1,row=1)
     # e - entry
     self.e = Entry(self.root, width = 10)
@@ -73,8 +73,8 @@ class App():
     self.e.delete(0, 'end')
     self.a = random.randint(2,12)
     self.b = random.randint(2,12)
-    self.c.configure(text=f"Бой {self.counter} из 5")
-    self.t.configure(text=f"{self.a} * {self.b} = ")
+    self.c.configure(text=r"Бой {self.counter} из 5")
+    self.t.configure(text=r"{self.a} * {self.b} = ")
     self.e.focus()
 
 

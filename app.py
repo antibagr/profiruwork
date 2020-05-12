@@ -25,7 +25,7 @@ class App():
     self.score = 0
 
     # c - counter
-    self.c = Label(self.root, text="Бой {} из 5").format(self.counter)
+    self.c = Label(self.root, text="Бой {} из 5".format(self.counter))
     self.c.grid(column=0,row=0)
     # t - task
     self.t = Label(self.root, text="{} * [} = ".format(self.a,self.b))
